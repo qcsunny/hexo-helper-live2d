@@ -19,7 +19,7 @@
 安装模块: 
 
 ```
-npm install -save hexo-helper-live2d
+npm install --save hexo-helper-live2d
 ```
 
 > Tips: 遇到npm的相关错误，试试 `npm cache verify` 或 `npm cache clean` 呗~
@@ -75,9 +75,11 @@ live2d:
   model: z16 # 模型名称 默认值: z16
   width: 150 # 宽度 默认值: 150
   height: 300 # 高度 默认值: 300
+  opacity: 0..9 # 透明度 默认值: 0.9
   mobileShow: true # 是否在移动设备上显示 默认值: true
   mobileWidth: 75 # 移动设备上的宽度 默认值: 75
   mobileHeight: 150 # 移动设备上的高度 默认值: 150
+  mobileOpacity: 0.8  # 移动设备上的透明度 默认值: 0.8
   position: right # 模型左右侧放置位置 默认值: right
   horizontalOffset: 0 # 元素的水平偏移 默认值: 0
   verticalOffset: -20 # 元素的底部偏移 默认值: -20
@@ -109,9 +111,11 @@ live2d:
 
 - `width`: 宽度 默认值: 150
 - `height`: 高度 默认值: 300
+- `opacity`: 透明度 默认值: 0.9
 - `mobileShow`: 是否在移动设备上显示 默认值: true
 - `mobileWidth`: 移动设备上的宽度 默认值: 75
 - `mobileHeight`: 移动设备上的高度 默认值: 150
+- `mobileOpacity`: 移动设备上的透明度 默认值: 0.8
 - `position`: 模型左右侧放置位置 `left` 或 `right` 默认值: false
 - `horizontalOffset`: `<canvas>` 元素的水平偏移 默认值: 0
 - `verticalOffset`: `<canvas>` 元素的底部偏移 默认值: -20

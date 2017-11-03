@@ -19,7 +19,7 @@ Demo: [https://huaji8.top/post/live2d-plugin-2.0/](https://huaji8.top/post/live2
 Install module:
 
 ```
-npm install -save hexo-helper-live2d
+npm install --save hexo-helper-live2d
 ```
 
 > Tips: If you run into a npm problem, try to use `npm cache verify` or `npm cache clean` to fix it.
@@ -73,9 +73,11 @@ live2d:
   model: z16 # The model that you are willing to show. default: z16
   width: 150 # The width of your model. default: 150
   height: 300 # The height of your model. default: 300
+  opacity: 0.9 # The opacity of your model. default: 0.9
   mobileShow: true # Whether to show on mobile devices. default: true
   mobileWidth: 75 # The width of your model on mobile devices. default: 150
   mobileHeight: 150 # The height of your model on mobile devices. default: 75
+  mobileOpacity: 0.8,# The opacity of your model on mobile devices. default: 0.8
   position: right # Which side the model is shown at. default: right
   horizontalOffset: 0 # The horizontal offset. default: 0
   verticalOffset: -20 # The offset of the bottom. default: -20
@@ -108,9 +110,11 @@ live2d:
 
 - `width`: The width of your model. default: 150
 - `height`: The height of your model. default: 300
+- `opacity`: The opacity of your model. default: 0.9
 - `mobileShow`: Whether to show on mobile devices. default: true
 - `mobileWidth`: The width of your model on mobile devices. default: 150
 - `mobileHeight`: The height of your model on mobile devices. default: 75
+- `mobileOpacity`: The opacity of your model on mobile devices. default: 0.8
 - `horizontalOffset`: The horizontal offset. default: 0
 - `verticalOffset`: The offset of the bottom. default: -20
 - `position`:  `left` or `right` side the model is shown at. default: right

@@ -25,9 +25,11 @@ var config = Object.assign( {
     model: "z16",
     width: 150,
     height: 300,
+    opacity: 0.9,
     mobileShow: "true",
     mobileWidth: 75,
     mobileHeight: 150,
+    mobileOpacity: 0.8,
     position: "right",
     horizontalOffset: 0,
     verticalOffset: -20,
@@ -50,6 +52,7 @@ hexo.extend.helper.register('live2d', function() {
         z-index: 999;
         pointer-events: none;
         bottom: ${config.verticalOffset}px;
+        opacity: ${config.opacity};
       }
     </style>
     <script src="/live2d/device.min.js"></script>
@@ -59,6 +62,7 @@ hexo.extend.helper.register('live2d', function() {
       ${config.mobileShow ? `
       document.getElementById("${config.id}").width = ${config.mobileWidth};
       document.getElementById("${config.id}").height = ${config.mobileHeight};
+      document.getElementById("${config.id}").style.opacity = ${config.mobileOpacity};
       document.write('<script type="text/javascript" src="/live2d/script.js"><\\/script>');
       document.write('<script>loadlive2d(${JSON.stringify(config.id)}, ${JSON.stringify(url.resolve("/live2d/assets/", config.model + ".model.json"))}, 0.5)<\\/script>');
       ` : ``}
